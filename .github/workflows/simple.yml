@@ -7,10 +7,12 @@ jobs:
       runs-on: ubuntu-latest
       steps:
           - name: say hello
-          - run: echo "hello script"
+            run: echo "hello script"
           - name: run a command
-          - run: |
+            run: |
               whoami
               timedatectl
               top
+              node -v
+              npm -v
                
