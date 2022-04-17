@@ -1,0 +1,16 @@
+name: a simple ci pipeline script
+
+on: ["push"]
+
+jobs:
+    run-shell-commands:
+      runs-on: ubuntu-latest
+      steps:
+          - name: say hello
+          - run: echo "hello script"
+          - name: run a command
+          - run: |
+              whoami
+              timedatectl
+              top
+               
